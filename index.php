@@ -23,7 +23,8 @@ switch($uri_parse)
     break;
 
     default:
-        header('Location: /pokedex');
+        include 'View/Pokedex/pokedex.php';
+        
     break;
 }
 

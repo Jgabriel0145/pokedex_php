@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pokémon</title>
+    <title>cadastro_pokemon</title>
     <style>
         label, input {display: block;}
     </style>
@@ -28,6 +28,9 @@
     <label for="nome">Tipo</label>
     <input name="tipo" id="tipo" type="text" required placeholder="Digite o(s) tipo(s) do Pokémon..."
         value="<?= $model->tipo ?>"/>
+
+    <label for="imagem_poke">Foto do Pokémon:</label>
+    <input name="imagem_poke" id="imagem_poke" type="file"/>
 
     <br>
     <button type="submit" id="enviar"><strong>Enviar</strong></button>

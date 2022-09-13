@@ -1,3 +1,5 @@
+<style>
+
 body
 {
     background-image: linear-gradient(#8EE4FF, #d1f4ff);
@@ -66,3 +68,4 @@ body
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
 }
+</style>

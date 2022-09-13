@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <!-- Required meta tags -->
@@ -7,7 +7,9 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="rascunho.css" rel="stylesheet" type="text/css" />
+        <?php include 'View/modules/css/rascunho_css.php'; ?>
+
+        
 
 
 
@@ -16,17 +18,18 @@
     </head>
 
     <body>
+        
     
         <div class="container">
             <div class="row">
                 <div class="col" id="coluna1">
                     <center>
                         <div class="card" id="card_pokemon">
-                            <img src="foto_exemplo.png" class="card-img-top" alt="..." >
+                            <img src="foto_exemplo.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="card-title">Pikachu</h4>
-                                <br>
-                                                                
+                                <p class="card-text"><p>
+                                
                                 <div class="row">
                                     <div class="col">
                                         <a href="" class="btn btn-primary" id="btnVoltar">Voltar</a>
@@ -40,11 +43,13 @@
                                 <br>
 
                                 <div class="row">
-
                                     <div class="col">
-                                        <a href="/pokedex/form" class="btn btn-primary" id="btnCadastrar">Cadastrar um novo Pokémon</a>
+                                        <a href="" class="btn btn-primary" id="btnAvancar">Informações</a>
                                     </div>
 
+                                    <div class="col">
+                                        <a href="/pokedex/form" class="btn btn-primary" id="btnAvancar">Cadastrar</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -65,16 +70,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Informações</h4>
                                 <p class="card-text"><h6>Tipo</h6></p>
-                                
-                                <div id="texto_info_tipo">
-                                    <span></span>
-                                </div>
-
                                 <p class="card-text"><h6>Descrição do Pokémon</h6></p>
-
-                                <div id="texto_info_desc">
-                                    <span></span>
-                                </div>
                             </div>
                         </div>
                     </center>

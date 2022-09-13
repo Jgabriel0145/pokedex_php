@@ -6,9 +6,9 @@ class PokedexDAO
 
     function __construct()
     {
-        $dsn = "mysql:host=localhost:3306;dbname=db_pokedex";
+        $dsn = "mysql:host=localhost:3307;dbname=db_pokedex";
         $user = "root";
-        $pass = "Sapjg@2006";
+        $pass = "etecjau";
         
         $this->conexao = new PDO($dsn, $user, $pass);
     }
