@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <?php include 'View/Pokedex/pokedex_css.php'; ?>
+        <?php include 'View/Pokedex/css/pokedex_css.php'; ?>
 
 
 
@@ -22,9 +22,9 @@
                 <div class="col" id="coluna1">
                     <center>
                         <div class="card" id="card_pokemon">
-                            <img src="foto_exemplo.png" class="card-img-top" alt="..." >
+                            <img src="Uploads/foto_exemplo.png" class="card-img-top" alt="" >
                             <div class="card-body">
-                                <h4 class="card-title">Pikachu</h4>
+                                <h4 class="card-title"><?= $item->nome ?></h4>
                                 <br>
                                                                 
                                 <div class="row">
@@ -67,13 +67,13 @@
                                 <p class="card-text"><h6>Tipo</h6></p>
                                 
                                 <div id="texto_info_tipo">
-                                    <span></span>
+                                    <span><?= $item->tipo1 ?> / <?= $item->tipo2 ?></span>
                                 </div>
 
                                 <p class="card-text"><h6>Descrição do Pokémon</h6></p>
 
                                 <div id="texto_info_desc">
-                                    <span></span>
+                                    <span><?= $item->descricao ?></span>
                                 </div>
                             </div>
                         </div>

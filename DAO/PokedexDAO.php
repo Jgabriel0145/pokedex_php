@@ -15,14 +15,15 @@ class PokedexDAO
 
     function insert(PokedexModel $model)
     {
-        $sql = "INSERT INTO pokemon(nome, descricao, tipo) values (?, ?, ?)";
+        $sql = "INSERT INTO pokemon (nome, descricao, tipo1, tipo2) values (?, ?, ?, ?)";
 
         $stmt = $this->conexao->prepare($sql);
 
         
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
-        $stmt->bindValue(3, $model->tipo);
+        $stmt->bindValue(3, $model->tipo1);
+        $stmt->bindValue(4, $model->tipo2);
 
         $stmt->execute();
     }
@@ -39,13 +40,14 @@ class PokedexDAO
 
     public function update(PokedexModel $model)
     {
-        $sql = "UPDATE pokemon SET nome=?, descricao=?, tipo=? WHERE id=? ";
+        $sql = "UPDATE pokemon SET nome=?, descricao=?, tipo1=?, tipo2=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
-        $stmt->bindValue(3, $model->tipo);
-        $stmt->bindValue(4, $model->id);
+        $stmt->bindValue(3, $model->tipo1);
+        $stmt->bindValue(4, $model->tipo2);
+        $stmt->bindValue(5, $model->id);
         
         $stmt->execute();
     }

@@ -1,3 +1,5 @@
+<style>
+
 body
 {
     background-image: linear-gradient(#8EE4FF, #d1f4ff);
@@ -17,15 +19,7 @@ body
     margin-top: 30%;
 }
 
-#btnVoltar, #btnAvancar
-{
-    background-color: aliceblue;
-    color: black;
-    font-weight: bold;
-    width: 5vw;
-}
-
-#btnCadastrar
+#btnVoltar, #btnAvancar, #btnCadastrar
 {
     background-color: aliceblue;
     color: black;
@@ -35,11 +29,6 @@ body
 #btnVoltar:hover, #btnAvancar:hover, #btnCadastrar:hover
 {
     background-color: rgb(175, 182, 189);
-}
-
-#btnVoltar:visited, #btnAvancar:visited
-{
-    box-shadow: 10px#D50000;
 }
 
 #texto_info_tipo
@@ -66,3 +55,5 @@ body
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+</style>

@@ -9,7 +9,7 @@ class PokedexController
         
         $model->getAllRows();
 
-        include 'View/modules/Pokedex/pokedex.php';
+        include 'View/Cadastro/lista_pokemon.php';
     }
 
     public static function form()
@@ -20,7 +20,7 @@ class PokedexController
         if (isset($_GET['id']))
             $model = $model->getById((int)$_GET['id']);
 
-        include 'View/modules/Pokedex/cadastro_pokemon.php';
+        include 'View/Cadastro/cadastro_pokemon.php';
     }
 
     public static function save()
@@ -31,7 +31,9 @@ class PokedexController
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome'];
         $model->descricao = $_POST['descricao'];
-        $model->tipo = $_POST['tipo'];
+        $model->tipo1 = $_POST['tipo1'];
+        $model->tipo2 = $_POST['tipo2'];
+
 
         $model->save();
 

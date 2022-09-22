@@ -2,7 +2,8 @@
 
 class PokedexModel
 {
-    public $id, $nome, $descricao, $tipo, $rows;
+    
+    public $id, $nome, $descricao, $tipo1, $tipo2, $rows;
 
     public function save()
     {

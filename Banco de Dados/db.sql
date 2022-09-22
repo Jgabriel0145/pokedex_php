@@ -24,7 +24,8 @@ CREATE TABLE IF NOT EXISTS `db_pokedex`.`pokemon` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `descricao` VARCHAR(500) NOT NULL,
-  `tipo` VARCHAR(100) NOT NULL,
+  `tipo1` VARCHAR(100) NOT NULL,
+  `tipo2` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
